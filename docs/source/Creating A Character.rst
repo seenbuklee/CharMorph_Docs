@@ -23,7 +23,7 @@ Every Base has dozens upon dozens of potential variation
 Finalization
 ----------------
 
-:Apply Morphs: Creative Commons Attribution
+:Apply Morphs: Change Shapekey Settings 
 :Rig: Selects Rig from List
 :Subdivision: Applies Subdivision Surface Settings
 :Corrective Smooth: Applies Correctuve Smooth Modifier
