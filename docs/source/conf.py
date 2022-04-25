@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'CharMorph'
+copyright = '2022, Upliner'
+author = 'Hopefullyidontgetbanned'
 
 release = '0.1'
 version = '0.1.0'
