@@ -6,29 +6,21 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To Install Charmorph, you have two Options
+Cloning Using Git CLI or Download them on `Releases <https://github.com/Upliner/CharMorph/releases/>`_
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   git clone https://github.com/Upliner/CharMorph --recursive
 
-Creating recipes
+Licensing
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+Charmorph's Code is licensed under GPL in accordance with Blender's `License <https://www.blender.org/about/license//>`_
+   Content however is subject to their original Authors
 
-.. autofunction:: lumache.get_random_ingredients
+Character Licensing Chart:
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+:Antonia: Creative Commons Attribution
+:MB-Lab: GNU Affero General Public License
+:Reom: Creative Commons Attribution
