@@ -1,5 +1,5 @@
 Welcome to Charmorph's documentation!
-===================================
+========================================
 
 **Charmorph** is a Blender Add-on for Character Creation
 that Blends "Morphs" from `NumPY <https://numpy.org/>`_ files
@@ -19,3 +19,4 @@ Contents
    Introduction
    History
    Creating A Character
+   Character editing
