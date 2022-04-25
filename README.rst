@@ -1,4 +1,5 @@
-Template for the Read the Docs tutorial
+CharMorph Doccumentation
+
 =======================================
 
 This GitHub template includes fictional Python library
