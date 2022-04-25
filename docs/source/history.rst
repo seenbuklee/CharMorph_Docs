@@ -1,7 +1,7 @@
-API
+History
 ===
 
 .. autosummary::
    :toctree: generated
 
-   lumache
+   Charmorph
