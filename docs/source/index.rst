@@ -18,3 +18,4 @@ Contents
 
    Introduction
    History
+   Creating A Character
