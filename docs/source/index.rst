@@ -19,4 +19,5 @@ Contents
    Introduction
    History
    Creating A Character
+   Hair
    Character editing
