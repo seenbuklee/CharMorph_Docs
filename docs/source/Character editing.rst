@@ -25,6 +25,8 @@ L2 Morphs:
   :alt: Export Single Morph
 * Exports Morph as a numpy file with the ``.npy`` file extension
 
+Note: if you unfamiliar with regex, remove the morph regex expressions when exporting morphlists or multiple morphs.
+
 Metadata:
 
 All L2/L3 Morphs must be listed without their extension in their respective ``morphs.json`` files in order to be recognized by the add-on.
