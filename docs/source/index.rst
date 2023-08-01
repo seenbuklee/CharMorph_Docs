@@ -2,7 +2,7 @@ Welcome to Charmorph's documentation!
 ========================================
 
 **Charmorph** is a Blender Add-on for Character Creation
-that Blends "Morphs" from `NumPY <https://numpy.org/>`_ files
+that Blends "Morphs" from `NumPY <https://numpy.org/>`_ files into fully functional characters, it is explicitly designed to be modular and support any morphology such as Humanoid, Animal, insect, etc.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
