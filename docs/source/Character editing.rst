@@ -6,6 +6,22 @@ Base
 Apart from character creating CharMorph also has editing tools
 that helps to integrate new characters to CharMorph.
 
+
+Structure
+------------
+Every Characer is located in ``(Add-on)/data/characters/(character-name)``
+
+The folder structure is usually like;
+
+:hairstyles: each individual hairstyles is stored as numpy vertices.
+:joints: Joint positions are stored using vertex weights.
+:morphs: All morphs are stored here including L1/L2/L3 morph types.
+:weights: vertex weights are stored, here as a single numpy file based on rig set.
+:char.blend: the base of the character is stored here, without shapekeys or vertex weights, all material slots should be blank and be configured in the config file.
+:config.yaml: the configuration of the characters such as texture sets, metadata, rig types, etc
+:eyebrows.blend: hair is stored using blender's particle system on a proxy mesh and all must be enabled in the viewport. then they are added in the hair menu at user discretion.
+:rigs.blend: metarig data is stored, and a rig is generated based on internal/external blender plugins like rigify/auto-rig pro. 
+
 Morphs
 ------------
   Morphs are the Lifeblood of all Character Creators, including Charmorph. 
@@ -14,7 +30,7 @@ Morphs are Created by exporting Shapekeys to external files instead of being sto
 
 Morph Level:
 
-:L1: Major Body Type: Each L1 Morph can have it's own set of L2/L3 Morphs
+:L1: Reference Body Type: (Shape Basis) Each L1 Morph can have it's own set of L2/L3 Morphs
 :L2: Minor Morphs: This is where most of the morphs are and are the ones that make characters look more unique.
 :L3: Expression Morphs: This is for Facial Action Coding System (FACS) Shapekeys
 
