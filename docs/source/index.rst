@@ -22,3 +22,4 @@ Contents
    Hair
    Best Practices
    Character editing
+   Creating A Base
