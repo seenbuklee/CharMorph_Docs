@@ -8,9 +8,13 @@ MB-Lab
 
 MB-Lab characters have a few haircuts to choose from
 
-:Symmetric1: A Basic symmetrical bobcut
+:symmetric1: A Basic symmetrical bobcut
 :back1: Haircut where hair is pushed back
 :frontback1: Haircut where hair is pushed to the back and front
+
+:symmetric1: .. image:: images/symmetric1.png
+:back1: .. image:: images/back1.png 
+:frontback1: .. image:: images/frontback1.png 
 
 
 Antonia
