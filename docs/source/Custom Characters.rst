@@ -1,7 +1,7 @@
-Creating custom characters
+Custom Characters
 ======================
 
-.. Creating Characters from scratch
+.. Custom Characters
 
 NOTICE
 ------------
@@ -9,6 +9,7 @@ This tutorial is about the technical side of Charmorph, if you wish to learn abo
 For Reference We are using the latest commit as of 11:29 PM  February 4th 2024 with Blender 4.0.2 on Windows 11
 
 The example provided will be availble `Here <https://github.com/Hopefullyidontgetbanned/CharmorphExampleHuman>`
+
 The Base
 ------------
 You as an artist will likely have a pre-existing character that you wish to create into a charmorph character, However for this tutorial we will use Blender's Human Base Meshes, and delete every object that isn't the body. 
@@ -36,7 +37,7 @@ Within that folder we will create a file named config.yaml
   :width: 720
   :alt: Image of Windows Explorer with a folder open with config.yaml
   
-  Configuration (2)
+Configuration (2)
 ------------
 Open the newly created config file and set the parameters accordingly for our project we will go like this
 
@@ -53,7 +54,7 @@ Open the newly created config file and set the parameters accordingly for our pr
   :width: 720
   :alt: Image of Notepad++ with a config file open
   
-  Morphs (1)
+Morphs (1)
 ------------
 Create a folder in the character folder called morphs
 
@@ -67,7 +68,7 @@ Then create a folder named L1
   :width: 720
   :alt: Image of Windows Explorer with a new folder in the morphs folder named L1
   
-   Morphs (2)
+Morphs (2)
 ------------
 Now back to the Blend file, we want to create a basis shapekey called ``Default``
 
@@ -82,7 +83,7 @@ Navigate to the newly created L1 folder and export. You will notice the ability 
   :width: 720
   :alt: Image of Blender with Export L1 Morph Menu Open
   
-   Morphs (3)
+Morphs (3)
 ------------
 Back to explorer, we will be making a folder named L2 which will contain all our user exposed morphs.
 
@@ -90,7 +91,7 @@ Back to explorer, we will be making a folder named L2 which will contain all our
   :width: 720
   :alt: Image of Windows Explorer with a new folder in the morphs folder named L2
   
-   Morphs (4)
+Morphs (4)
 ------------
 We will continue by making said user exposed morphs this will include a morph for the ears and jowls, for this tutorial we will just call them ``Example_1`` and ``Example_2``
 This workflow is essentially identical to how you would make shapekeys in Blender except we will export them out later.
@@ -106,7 +107,7 @@ This workflow is essentially identical to how you would make shapekeys in Blende
   :width: 720
   :alt: Shapekey in Sculptmode showing drooping jowls.
  
-   Morphs (5)
+Morphs (5)
 ------------
 Once Satisfied with your morphs, navigate to the ``character editing`` menu again, and select ``Export morphs``. Remove any inappropriate regex (usually i just remove all regex to keep things simple). And export it into your ``L2`` folder, Remember to keep your precision consistent!
 .. image:: images/characterfromscratch_images/(13).png
@@ -124,7 +125,7 @@ Once Satisfied with your morphs, navigate to the ``character editing`` menu agai
   :width: 720
   :alt: Image of Export Morphs list menu
   
-   char.blend & final setup.
+char.blend & final setup.
 ------------
 Once you have created & exported your morphs, delete all your modifiers and shapekeys, and navigate to the base of your character folder and save the blend file as char.blend. This will be used by the add-on to pull data like materials if you have them and other data not externally stored.
 
@@ -143,7 +144,7 @@ if everything goes to plan, the base of your character folder should look like t
   :alt: Image of Windows explorer showing the base of the character folder.
   
 
-   Initial Fixes
+Initial Fixes
 ------------
 If you found any issues with loading your new character in charmorph you might find that your issues likely lie in the way you setup the config file. Usually a wrong indent or other syntax error can cause this
 
@@ -152,7 +153,7 @@ If you found any issues with loading your new character in charmorph you might f
   :alt: Image of Notepad++ showing changes to the config.yaml file.
 
 
-   Rigging (1)
+Rigging (1)
 ------------
 The appeal of a character creator for more skilled artists is the ability to practically skip the rigging process entirely. This is a bit more complicated in charmorph but we will keep it simple and basic.
 For this tutorial lets just use mixamo to keep things absolutely simple. I will assume you know how to use mixamo and keep things brief. You need to rig around the base of the character not with any morphs.
@@ -183,7 +184,7 @@ Then download the character in it's original pose with no animations.
   :width: 720
   :alt: Image of Mixamo's Download menu
   
-   Rigging (2)
+Rigging (2)
 ------------
 We have now created a basic skeletal rig, however now we need to actually automate it for charmorph to do our work for us.
 Import your mixamo rig.
@@ -207,7 +208,7 @@ Now that we have everything saved, we need matching transforms with that of our 
   :width: 720
   :alt: Image of Blender's apply transform menu.
   
-   Rigging (3)
+Rigging (3)
 ------------
 Onward to actually putting this rig into charmorph.
 Go to ``character editing`` and underneath ``rigging`` select your character object in the ``char`` box
@@ -236,7 +237,7 @@ The rest you can use other methods or delete them outright.
   :width: 720
   :alt: Image of Charmorph's recalc vertex groups button.
   
-   Rigging (4)
+Rigging (4)
 ------------
   
 Now, create two folders in your character folder: ``joints`` and ``weights``
@@ -258,7 +259,7 @@ Now we will do the same with joints, ``Export VGs`` and navigate to the ``joints
   :width: 720
   :alt: Image of Blender with the export vgs menu open with different regex.
   
-   Rigging (5)
+Rigging (5)
 ------------
 
 Now we can clean up the ``rigs.blend`` file, delete the mesh and rename the skeleton Mixamo. This will be what it will be called once imported.
@@ -280,11 +281,11 @@ Now we have to add the rig to our ``config.yaml`` file
 :weights: gives the relative location of the weights file
 :joints: gives the relative location of the joints file.
 
- .. image:: images/characterfromscratch_images/(36).png
+.. image:: images/characterfromscratch_images/(36).png
   :width: 720
   :alt: Image of Notepad++ with new parameters
 
-   Finale
+Finale
 ------------
 
 Now that everything is said and done you will more or less have a charmorph character available for your own purposes!.
