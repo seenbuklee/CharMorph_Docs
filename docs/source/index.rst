@@ -4,8 +4,8 @@ Welcome to Charmorph's documentation!
 **Charmorph** is a Blender Add-on for Character Creation
 that is explicitly designed to be modular and support any morphology such as Humanoid, Animal, insect, etc.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :ref:`Introduction` section for further information, including add-on
+:ref:`installation`
 
 .. note::
 
