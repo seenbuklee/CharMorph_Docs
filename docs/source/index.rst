@@ -21,4 +21,5 @@ Contents
    Creating A Character
    Hair
    Best Practices
+   Custom Characters
    Character editing
