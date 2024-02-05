@@ -21,7 +21,7 @@ Note that this is just to keep the tutorial as simple as possible.
 
 The Barebasics of Prepping
 ------------
-Every character needs to be stripped down to the bare basics, then be built up again seperately, We can call this process 'prepping your character'. So we will apply the modifiers and rename it to 'ExampleHuman'
+Every character needs to be stripped down to the bare basics, then be built up again seperately, We can call this process 'prepping your character'. So we will apply the modifiers and rename it to ``ExampleHuman``
 
 .. image:: images/characterfromscratch_images/(2).png
   :width: 720
@@ -56,13 +56,13 @@ Open the newly created config file and set the parameters accordingly for our pr
   
 Morphs (1)
 ------------
-Create a folder in the character folder called morphs
+Create a folder in the character folder called ``morphs``
 
 .. image:: images/characterfromscratch_images/(5).png
   :width: 720
   :alt: Image of Windows Explorer with a new folder in the character folder named morphs
   
-Then create a folder named L1
+Then create a folder named ``L1``
 
 .. image:: images/characterfromscratch_images/(6).png
   :width: 720
@@ -85,7 +85,7 @@ Navigate to the newly created L1 folder and export. You will notice the ability 
   
 Morphs (3)
 ------------
-Back to explorer, we will be making a folder named L2 which will contain all our user exposed morphs.
+Back to explorer, we will be making a folder named ``L2`` which will contain all our user exposed morphs.
 
 .. image:: images/characterfromscratch_images/(9).png
   :width: 720
@@ -119,7 +119,7 @@ Once Satisfied with your morphs, navigate to the ``character editing`` menu agai
 .. image:: images/characterfromscratch_images/(14).png
   :width: 720
   :alt: Image of Windows Explorer with the exported morphs.
-Then afterwards select ``Export Morphs list`` and export it in your L2 folder.
+Then afterwards select ``Export Morphs list`` and export it in your ``L2`` folder.
 
  .. image:: images/characterfromscratch_images/(15).png
   :width: 720
@@ -127,7 +127,7 @@ Then afterwards select ``Export Morphs list`` and export it in your L2 folder.
   
 char.blend & final setup.
 ------------
-Once you have created & exported your morphs, delete all your modifiers and shapekeys, and navigate to the base of your character folder and save the blend file as char.blend. This will be used by the add-on to pull data like materials if you have them and other data not externally stored.
+Once you have created & exported your morphs, delete all your modifiers and shapekeys, and navigate to the base of your character folder and save the blend file as ``char.blend.`` This will be used by the add-on to pull data like materials if you have them and other data not externally stored.
 
  .. image:: images/characterfromscratch_images/(16).png
   :width: 720
