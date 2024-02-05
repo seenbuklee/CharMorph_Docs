@@ -95,6 +95,7 @@ Morphs (4)
 ------------
 We will continue by making said user exposed morphs this will include a morph for the ears and jowls, for this tutorial we will just call them ``Example_1`` and ``Example_2``
 This workflow is essentially identical to how you would make shapekeys in Blender except we will export them out later.
+
 .. image:: images/characterfromscratch_images/(10).png
   :width: 720
   :alt: Image of Blender Sculpting mode with Shapekey as active sculpt.
@@ -110,6 +111,7 @@ This workflow is essentially identical to how you would make shapekeys in Blende
 Morphs (5)
 ------------
 Once Satisfied with your morphs, navigate to the ``character editing`` menu again, and select ``Export morphs``. Remove any inappropriate regex (usually i just remove all regex to keep things simple). And export it into your ``L2`` folder, Remember to keep your precision consistent!
+
 .. image:: images/characterfromscratch_images/(13).png
   :width: 720
   :alt: Image of the Export morphs menu without any regex.
@@ -117,10 +119,8 @@ Once Satisfied with your morphs, navigate to the ``character editing`` menu agai
 .. image:: images/characterfromscratch_images/(14).png
   :width: 720
   :alt: Image of Windows Explorer with the exported morphs.
+Then afterwards select ``Export Morphs list`` and export it in your L2 folder.
 
- Then afterwards select ``Export Morphs list`` and export it in your L2 folder.
- 
- 
  .. image:: images/characterfromscratch_images/(15).png
   :width: 720
   :alt: Image of Export Morphs list menu
