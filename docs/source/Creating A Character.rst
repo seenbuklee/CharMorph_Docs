@@ -68,7 +68,7 @@ Voxel Remesh Alt Topo:
 
 Default Cube Alt Topo:
 
-.. image:: images/MB-LAB_Male_DefaultCube_AltTopo
+.. image:: images/MB-LAB_Male_DefaultCube_AltTopo.png
   :width: 768
   :alt: MB Lab Male Cube Remesh Alt Topo
   
