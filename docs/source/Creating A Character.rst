@@ -56,20 +56,20 @@ Charmorph has a solution called Alternative Topology or Alt Topo for short. Alt 
 Default Topology:
 
 .. image:: images/MB-LAB_Male_Default_Topology.png
-  :width: 256
+  :width: 768
   :alt: MB Lab Male Default Topology
   
 
 Voxel Remesh Alt Topo:
 
 .. image:: images/MB-LAB_Male_Voxel_RemeshAltTopo.png
-  :width: 256
+  :width: 768
   :alt: MB Lab Male Voxel Remesh Alt Topo
 
 Default Cube Alt Topo:
 
-.. image:: images/MB-LAB_Male_Default_Topology.png
-  :width: 256
+.. image:: images/MB-LAB_Male_DefaultCube_AltTopo
+  :width: 768
   :alt: MB Lab Male Cube Remesh Alt Topo
   
 
@@ -83,8 +83,8 @@ And saw this notice
   :width: 256
   :alt: Build Alternate Topology UI Menu
   
- Selecting ``Build Alt Topo`` will retarget the modified topology to work with charmorph's systems.
- However, it is better practice to import a character with the Custom Alt Topo option before importing the mesh, because it copies the mesh used as a reference rather than overwriting it.
+Selecting ``Build Alt Topo`` will retarget the modified topology to work with charmorph's systems.
+However, it is better practice to import a character with the Custom Alt Topo option before importing the mesh, because it copies the mesh used as a reference rather than overwriting it.
 
 .. image:: images/ImportAltTopoUI.png
   :width: 256
