@@ -47,3 +47,45 @@ Finalization is a neccesary step to complete a character, After finalization, mo
 :Corrective Smooth: Applies Corrective Smooth Modifier, this fixes deformations such as arm and knee bending
 
 * Select Finalize
+
+Introduction to Alt-Topo
+----------------
+Depending on your needs for a given project, you will be unsatisfied with a given character's topology, either it is too high or too low, has the wrong edge flow or a multitude of other problems.
+Charmorph has a solution called Alternative Topology or Alt Topo for short. Alt Topo allows users to retarget a given Charmorph character onto any topology, no matter how arbitrary. It can range from a high poly voxel remesh to the default cube.
+
+Default Topology:
+
+.. image:: images/MB-LAB_Male_Default_Topology.png
+  :width: 256
+  :alt: MB Lab Male Default Topology
+  
+
+Voxel Remesh Alt Topo:
+
+.. image:: images/MB-LAB_Male_Voxel_RemeshAltTopo.png
+  :width: 256
+  :alt: MB Lab Male Voxel Remesh Alt Topo
+
+Default Cube Alt Topo:
+
+.. image:: images/MB-LAB_Male_Default_Topology.png
+  :width: 256
+  :alt: MB Lab Male Cube Remesh Alt Topo
+  
+
+Using Alt-Topo
+----------------
+
+You might have been introduced to Alt Topology by applying Topology altering modifiers to a Charmorph generated mesh.
+And saw this notice
+
+.. image:: images/BuildAltTopoUI.png
+  :width: 256
+  :alt: Build Alternate Topology UI Menu
+  
+ Selecting ``Build Alt Topo`` will retarget the modified topology to work with charmorph's systems.
+ However, it is better practice to import a character with the Custom Alt Topo option before importing the mesh, because it copies the mesh used as a reference rather than overwriting it.
+
+.. image:: images/ImportAltTopoUI.png
+  :width: 256
+  :alt: Import Alternate Topology UI Menu
