@@ -4,8 +4,7 @@ Character editing
 Base
 ------------
 Apart from character creating CharMorph also has editing tools
-that helps to integrate new characters to CharMorph.
-
+that helps to integrate new characters to CharMorph, as well as edting existing ones.
 
 Structure
 ------------
@@ -19,8 +18,9 @@ The folder structure is usually like;
 :weights: vertex weights are stored, here as a single numpy file based on rig set.
 :char.blend: the base of the character is stored here, without shapekeys or vertex weights, all material slots should be blank and be configured in the config file.
 :config.yaml: the configuration of the characters such as texture sets, metadata, rig types, etc
-:eyebrows.blend: hair is stored using blender's particle system on a proxy mesh and all must be enabled in the viewport. then they are added in the hair menu at user discretion.
+:eyebrows.blend: hair is stored using blender's particle system on a desired mesh and each of them must be enabled in the viewport. then they are added in the hair menu at user discretion.
 :rigs.blend: metarig data is stored, and a rig is generated based on internal/external blender plugins like rigify/auto-rig pro. 
+:faces.npy: Stores the default topology vertuces and allows the altnernate topology feature to work on a given character.
 
 Morphs
 ------------
@@ -164,3 +164,24 @@ When all vertex groups are calculated you can either use these groups directly i
 or you can export them to npz file and place them to
 "data/characters/{your character}/joints/{rig name}.npz".
 You need to use "joint\_" regular expression for exporting.
+
+Config
+------------
+Currently Charmorph has these configuration options documented. 
+
++--------------------+---------------------------------------------------------------+------------+
+| Name               | Options                                                       | Required?  |
++====================+===============================================================+============+
+| title              | Any                                                           | Yes        |
++--------------------+---------------------------------------------------------------+------------+
+| author             | Any                                                           | Yes        |
++--------------------+---------------------------------------------------------------+------------+
+| license            | Any                                                           | Yes        |
++--------------------+---------------------------------------------------------------+------------+
+| additional_authors | Any                                                           | No         |
++--------------------+---------------------------------------------------------------+------------+
+| char_obj           | Has to match object Name in char.blend file                   | Yes        |
++--------------------+---------------------------------------------------------------+------------+
+| basis              | Has to match shapekey basis name that L2 morphs were based on | Yes        |
++--------------------+---------------------------------------------------------------+------------+
+
