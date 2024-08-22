@@ -57,7 +57,10 @@ Eyebrows were made by `Mindfront <http://www.makehumancommunity.org/clothes/mind
 :mind_eyebrows_09: .. image:: images/MindfrontEyebrow09.png 
 :mind_eyebrows_10: .. image:: images/MindfrontEyebrow10.png 
 :mind_eyebrows_11 (Default): .. image:: images/MindfrontEyebrow11.png
-:mind_eyebrows_12: .. image:: images/MindfrontEyebrow12.png 
+:mind_eyebrows_12: .. image:: images/MindfrontEyebrow12.png
+:mind_eyebrows_13: .. image:: images/MindfrontEyebrow13.png 
+:mind_eyebrows_14: .. image:: images/MindfrontEyebrow14.png 
+
 
 +++++++++
 Hairstyles
