@@ -21,7 +21,7 @@ Charmorph's Code is licensed under GPL in accordance with Blender's `License <ht
 
 Character Licensing Chart:
 
-:Antonia: Creative Commons Attribution (CC-BY)
-:MB-Lab: GNU Affero General Public License (AGPL)
-:Reom: Creative Commons Attribution (CC-BY)
-:Vitruvian: Creative Commons Zero (CC0)
+:Antonia: Creative Commons Attribution (`CC-BY <https://creativecommons.org/licenses/by/4.0/deed.en>`_)
+:MB-Lab: GNU Affero General Public License (`AGPL <https://www.gnu.org/licenses/agpl-3.0.en.html>`_)
+:Reom: Creative Commons Attribution (`CC-BY <https://creativecommons.org/licenses/by/4.0/deed.en>`_)
+:Vitruvian: Creative Commons Zero (`CC0 <https://creativecommons.org/public-domain/cc0/>`_)
