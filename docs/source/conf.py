@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.abspath("_themes"))
 
 
 project = 'CharMorph'
-copyright = '2022, Upliner'
+copyright = '2025, Blender Character Project'
 author = 'Hopefullyidontgetbanned'
 
 release = '0.2'
