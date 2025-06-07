@@ -10,7 +10,8 @@ that helps to integrate new characters to CharMorph, as well as edting existing 
 
 Structure
 ------------
-Every Characer is located in ``(Add-on)/data/characters/(character-name)``
+Every Characer is located in ``./characters/(character-name)``
+The base directory for characters is located either at the default add-on directory or a user defined one.
 
 The folder structure is usually like;
 
@@ -190,6 +191,75 @@ When all vertex groups are calculated you can either use these groups directly i
 or you can export them to npz file and place them to
 "data/characters/{your character}/joints/{rig name}.npz".
 You need to use "joint\_" regular expression for exporting.
+
+Drivers
+------
+Drivers are a extension of the rigging step, Charmorph allows the import/export of drivers at the finalization step.
+export the drivers in rigging section of character editing, then specify the location and or name of the json file containing the drivers. 
+Make sure the rig name for the drivers matches the name of the rig that CharMorph generates.
+
+.. image:: images/ExportDrivers.png
+  :width: 256
+  :alt: image of the export drivers button in charmorph editor rigging dropdown.
+
+
+.. image:: images/driversconfigyaml.png
+  :width: 256
+  :alt: image of the config.yaml file defining the name of the driver.json file.
+
+
+Materials
+---------
+
+Materials require fake users as CharMorph defines material assignement in a characters config file based on index. We will be using Vitruvian as an example.
+The empty slots must be assinged to appropriate geometry. 
+
+.. image:: images/FakeMats.png
+  :width: 256
+  :alt: image of Blender Material menu with zero materials assigned to empty slots
+
+All desired materials must have fake user assigned to it to avoid blender deleting it and for CharMorph to import it. 
+
+.. image:: images/FakeUsers.png
+  :width: 256
+  :alt: image of Blender Material menu with a drop down menu highlighting fake users.
+
+Then the given materials must be configured in the character's ``config.yaml`` file 
+
+.. image:: images/MatConfig.png
+  :width: 256
+  :alt: image of the yaml file showing a list of material names.
+
+So the first index is for the particle system attached to the character then the skin material, and we go down the list matching them in our config file. The only thing to keep in mind to this order is the ``charmorph_censor`` material, when  ``adult mode`` is enabled in add-on's settings, it will remove the slot assigned that material, we want to take advantage of how Blender orders the selection of a material slot when a previous one has been deleted to assign the previously censored geometry to the skin material so we place it below the skin material in the slots list and the ``config.yaml`` list.
+
+Additionally to expose the settings of a material, one have a nodegroup with the name ``charmorph_settings`` with the desired user inputs linked up to the material inputs in question.
+
+.. image:: images/Charmorph_settingsmaterial.png
+  :width: 768
+  :alt: image of the blender shader editor with charmorph_settings linking up to the material.
+
+In the nodegroup a value node must be created that matches the desiried name of the user input and it's default value. So for an example this input will be called ``Linear Melanin Texture Blend`` and its default value is ``0``.
+
+.. image:: images/CharMorph_setting_material_example_setting.png
+  :width: 768
+  :alt: image of the blender shader editor with inside the charmorph_settings nodegroup showing one of the exposed values.
+
+Textures
+---------
+
+Textures exist on a similar principle as they need to have an empty image file calling the file they need to retrieve from the ``textures`` folder
+The file it is expecting to receieve is ``iris_col.1007.exr`` so we give it the arguments ``tex_`` for texture and at the end ``.<UDIM>`` this is so that blender opens it as a tiled UDIM file.
+
+.. image:: images/TextureLabel.png
+  :width: 512
+  :alt: image of the blender shader editor with a custom label
+
+Neccesary for using both UDIMs and assiging colorspaces, the ``settings.yaml`` file in the ``textures`` folder assigns colorspaces to textures.
+This is particularly neccesary for Linear or Non-Color images like Normal or Displacement maps.
+
+.. image:: images/texturesettingsyaml.png
+  :width: 256
+  :alt: image of the settings.yaml file listing the textures with a linear colorspace assigned.
 
 Config
 ------------
